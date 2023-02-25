@@ -73,8 +73,8 @@
 													data-animation="slideExpandUp">
 
 													<h2 style="line-height: 1.2;color:#fff !important;"
-														class="highlight s-heading"> Producing High Quality
-														Pharmaceuticals Products ...
+														class="highlight s-heading"> Trading High Quality
+														Pharmaceutical, and Medical Devices ...
 													</h2>
 													<span class="bottom_corners"></span>
 												</div>
@@ -153,10 +153,10 @@
 								class="rounded"> </div>
 						<div class="col-md-6 col-md-pull-6 display_table_cell_md">
 							<h2 class="section_header" style="color:#72ab4c;">ABOUT US</h2>
-							<p class="highlight bottommargin_20" style="">
+							<p class="highlight bottommargin_20">
 								<span style="color:#72ab4c;"><strong>Bienestar</strong></span>
 								is well known Delhi based leading proprietary company established in 2018,
-								that's trades in various medical devices and equipment Company has broad mission and
+								that's trades in various medical devices and equipment. Company has broad mission and
 								vision of delivering quality products at affordable cost
 								to the end users.
 								At present Bienestar has associated partnership with word-wide medicals devices company
@@ -230,8 +230,9 @@
 									International Business from Jamia Millia Islamia, JMI, he started his career in
 									marketing manager from Metro Hospital Noida, and later on the basis of his excellent
 									performance he was assigned the responsibility to lead the medical tourism.</p>
-								<span class="bottom_corners"></span>
-							</div>
+									<a href= "javascript:void(0)" class="expend">Read More</a>
+									<span class="bottom_corners"></span>
+								</div>
 						</div>
 						<div class="col-md-6 col-sm-6 col-sm-offset-3 col-md-offset-0">
 							<div class="teaser hover_icon with_padding big-padding with_border rounded text-center">
@@ -239,11 +240,11 @@
 										width="100%"></div>
 								<h4 class="topmargin_20 hover-color2"><a href="product.html"
 										class="s-heading">Co-founder</a></h4>
-								<p class="content-3lines-ellipsis">Mr.Faizan Ahmad Khan law graduate from Delhi
+								<p class="content-3lines-ellipsis">Mr.Faizan Ahmad Khan Law Graduate from Delhi
 									University and Post graduate Aligarh Muslim University AMU have tremendous efforts
 									and performance in Bienestar since 2018.</p>
-
-							</div>
+									<a href="javascript:void(0)" class="expend">Read More</a>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -259,7 +260,7 @@
 							<p class="highlight bottommargin_20" style="">
 								<span style="color:#72ab4c;"><strong>Bienestar</strong></span>
 								is well known Delhi based leading proprietary company established in 2018,
-								that's trades in various medical devices and equipment Company has broad mission and
+								that trades in various medical devices and equipment Company has broad mission and
 								vision of delivering quality products at affordable cost
 								to the end users.
 								At present Bienestar has associated partnership with word-wide medicals devices company
@@ -415,7 +416,13 @@
 			if (i >= 3) {
 				i = 0;
 			}
-		}, 5000)
+		}, 5000);
+		let expends = document.querySelectorAll(".expend");
+		expends.forEach((item)=>{
+			item.addEventListener("click", (e)=>{
+				console.log(e.target.previousElementSibling.classList.toggle("o"))
+			})
+		})
 	</script>
 </body>
 
